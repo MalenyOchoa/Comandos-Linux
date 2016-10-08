@@ -1,3 +1,4 @@
+
 # COMANDOS LINUX
 
 //Ctrl + Alt + T  -> Abre terminal
@@ -32,13 +33,16 @@ rm 		#sirve para remover/eliminar un archivo: rm ~/*ruta*
 
 ```
 
+
 --------------------------------------------------------------------------------
+
+
 
 # COMANDOS DE GIT
 
-- `git --help` // sirve para ver que opciones tengo y como se usan, se puede usar despues de un comando para ver como funciona
+- `git --help` //sirve para ver las opciones y como se usan,Se puede usar despues de un comando para ver como funciona
 - `git init` //sirve para crear/inicializar un repositorio nuevo
-- `git clone`//sirve para clonar un repositorio remoto: git clone *repo* *dir*
+- `git clone`//sirve para clonar un repositorio remoto: git clone "repo" "dir"
 - `git status` // sirve para mostar el estado del repositorio
 - `git add` //sirve para pre-confirmar un archivo (de rojo a verde): git add README.md
 - `git diff` //sirve para mostrar los cambios en un archivo versionado(solo sirve si esta en rojo)
@@ -56,16 +60,15 @@ rm 		#sirve para remover/eliminar un archivo: rm ~/*ruta*
 
 # COMANDOS PARA MYSQL
 
-- //Para conectarse a una base de datos local
-mysql -u usuario -p
-(En terminal linux: No es necesario estar en un punto estrategico
-o ruta establecida para poder acceder al servidor de bases de datos)
+- //PARA CONECTARSE a una base de datos local:  
+mysql -u usuario -p    #(En terminal linux: No es necesario estar en un punto estrategico
+o ruta establecida para poder acceder al servidor de bases de datos).
 
-- //Mostrar bases de datos 
+- //MOSTRAR bases de datos:   
 SHOW DATABASE;
 
-- //Para abir/seleccionar una base de datos
-Use nombre_bd;
+- //Para ABRIR/SELECCIONAR una base de datos:  
+USE nombre_db;
 
-- //MOSTRAR TABLAS
+- //MOSTRAR Tablas:
 SHOW TABLES;
