@@ -1,13 +1,34 @@
 # COMANDOS LINUX
 
 ```bash
-ls      #sirve para ver lo que hay dentro de un directorio
 
 --help  #me dice que opciones tengo y para que sirven
 
-cat     #sirve para ver que hay dentro de
+pwd		#sirve para saber en que directorio estoy
 
--a      #sirve para ver los archivos ocultos/ se usa exclisivo con: ls -a
+ls      #sirve para ver lo que hay dentro de un directorio
+
+ls -l  	#sirve para ver los archivos en forma de lista
+
+ls -a   #sirve para ver los archivos ocultos
+
+cat     #sirve para ver que hay dentro de un archivo/doc
+
+cd  	#sirve para moverme entre carpetas
+
+cd .. 	#sirve para retroceder al directorio anterior
+
+mkdir	#sirve para crear un nuevo directorio
+
+nano	#sirve para crear/editar/modificar archivos: nano *nombrearchivo*
+
+mv 	#sirve para mover/renombrar un archivo: mv *nombre* *nuevonombre*
+
+cp 	#sirve para copiar un archivo: cp *rutaActual* *rutaDondeDeseaCopiar*
+
+rm 	#sirve para remover/eliminar un archivo: rm ~/*ruta*
+
+
 ```
 
 --------------------------------------------------------------------------------
