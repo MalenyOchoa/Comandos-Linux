@@ -2,7 +2,11 @@
 
 ```bash
 
---help  #me dice que opciones tengo y para que sirven
+--help  #sirve para ver opciones tengo y para que sirven
+
+cd      #sirve para moverme entre carpetas
+
+cd ..   #sirve para retroceder al directorio anterior
 
 pwd		#sirve para saber en que directorio estoy
 
@@ -14,19 +18,15 @@ ls -a   #sirve para ver los archivos ocultos
 
 cat     #sirve para ver que hay dentro de un archivo/doc
 
-cd  	#sirve para moverme entre carpetas
-
-cd .. 	#sirve para retroceder al directorio anterior
-
 mkdir	#sirve para crear un nuevo directorio
 
 nano	#sirve para crear/editar/modificar archivos: nano *nombrearchivo*
 
-mv 	#sirve para mover/renombrar un archivo: mv *nombre* *nuevonombre*
+mv 		#sirve para mover/renombrar un archivo: mv *nombre* *nuevonombre*
 
-cp 	#sirve para copiar un archivo: cp *rutaActual* *rutaDondeDeseaCopiar*
+cp 		#sirve para copiar un archivo: cp *rutaActual* *rutaDondeDeseaCopiar*
 
-rm 	#sirve para remover/eliminar un archivo: rm ~/*ruta*
+rm 		#sirve para remover/eliminar un archivo: rm ~/*ruta*
 
 
 ```
@@ -43,3 +43,23 @@ rm 	#sirve para remover/eliminar un archivo: rm ~/*ruta*
 - `git clone`//sirve para clonar un repositorio remoto
 - `git push`//sirve para subir mis cambios locales a un repositorio remoto (git push "dondeguameter" "branchqueguasubir")
 - `git remote`//sirve para mostrar los repositorios remotos que tengo de mi proyecto
+
+
+
+-------------------------------------------------------------------------------
+
+# COMANDOS PARA MYSQL
+
+- //Para conectarse a una base de datos local
+mysql -u usuario -p
+(En terminal linux: No es necesario estar en un punto estrategico
+o ruta establecida para poder acceder al servidor de bases de datos)
+
+- //Mostrar bases de datos 
+SHOW DATABASE;
+
+- //Para abir/seleccionar una base de datos
+Use nombre_bd;
+
+- //MOSTRAR TABLAS
+SHOW TABLES;
