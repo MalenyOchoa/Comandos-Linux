@@ -17,3 +17,4 @@ cat     #sirve para ver que hay dentro de
 - `git add` //sirve para pre-confirmar un archivo (de rojo a verde)
 - `git diff` //sirve para mostrar los cambios en un archivo versionado(solo sirve si esta en rojo)
 - `git log` //sirve para mostar el historial de confirmaciones
+- `git clone`//sirve para clonar un repositorio remoto
