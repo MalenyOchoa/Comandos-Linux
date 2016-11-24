@@ -133,27 +133,19 @@ $ git push origin master
 - Si quieres cambiar el nombre de la referencia de un remoto, puedes ejecutar `git remote rename`.
 Por ejemplo, si quieres renombrar `repoMaleny` a `repoM`, puedes hacerlo con `git remote rename`:
 
-``
+`$ git remote rename repoMaleny repoM`
 
-$ git remote rename repoMaleny repoM
-$ git remote
+`$ git remote
 origin
-repoM
-``
+repoM`
+
 
 - Si por alguna razón quieres eliminar un remoto, puedes utilizar `git remore rm`:
 
 
-``
-
-$ git remote rm repoM
-$ git remote
+`$ git remote rm repoM`
+`$ git remote`
 origin
-
-``
-
-
-
 
 
 
