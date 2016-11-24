@@ -78,7 +78,9 @@ y que serán usadas al leer y escribir ese remoto:
 
 
 ``
+
 $ git remote -v
+
 origin https://github.com/MalenyOchoa/nombreRepo.git  (fetch)
 origin https://github.com/MalenyOchoa/nombreRepo.git (push)
 
@@ -119,29 +121,34 @@ Si quieres enviar tu rama `master` a tu servidor `origin`
 (Recuerda, clonar un repositorio establece esos nombres automaticamente)
 puedes ejecutar el siguiente comando y se enviarán todos los commits que hayas hecho al servidor:
 
+
 ``
+
 $ git push origin master
 
 ``
+
 #- * ELIMINAR Y RENOMBRAR REMOTOS *
 
-si quieres cambiar el nombre de la referencia de un remoto, puedes ejecutar `git remote rename`.
+- Si quieres cambiar el nombre de la referencia de un remoto, puedes ejecutar `git remote rename`.
 Por ejemplo, si quieres renombrar `repoMaleny` a `repoM`, puedes hacerlo con `git remote rename`:
 
 ``
+
 $ git remote rename repoMaleny repoM
 $ git remote
 origin
 repoM
+``
+
+- Si por alguna razón quieres eliminar un remoto, puedes utilizar `git remore rm`:
+
 
 ``
-Si por alguna razón quieres eliminar un remoto, puedes utilizar `git remore rm`:
 
-``
 $ git remote rm repoM
 $ git remote
 origin
-
 
 ``
 
