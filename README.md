@@ -51,6 +51,153 @@ rm 		#sirve para remover/eliminar un archivo: rm ~/*ruta*
 - `git push`//sirve para subir mis cambios locales a un repositorio remoto: git push "dondeguameter" "branchqueguasubir"
 - `git remote`//sirve para mostrar los repositorios remotos que tengo de mi proyecto
 
+# TRABAJAR CON REMOTOS
+Para poder colaborar en cualquier proyecto Git, necesitas saber cómo gestionar repositorios remotos.
+Los repositorios remotos son versiones de tu proyecto que están hospedadas en internet en cualquier otra red.
+Gestionar un repositorio remoto incluye saber cómo añadir un repositorio remoto, eliminar los remotos que ya no son válidos,
+gestionar varias ramas remotas y definir si deben rastrearse o no, y más.
+
+- * VER TUS REMOTOS *
+Para ver los remotos que tienes configurados, debes ejecutar el comando `git remote`
+Mostrará los nombres de cada uno de los repositorios que tienes especificados. Si has clonado tu repositorio, deberías ver
+almenos `origin` - este es el nombre que por defecto Git le da al servidor del que has clonado:
+
+```
+$ git clone http://github.com/MalenyOchoa/nombreRepositorio.git
+.................
+.............
+...........
+$ cd nombreRepos
+$ git remote
+origin
+
+```
+También puedes pasar la opcion `-v`, la cual muestra las URLs que Git ha asociado al nombre
+y que serán usadas al leer y escribir ese remoto:
+``
+$ git remote -v
+origin https://github.com/MalenyOchoa/nombreRepo.git  (fetch)
+origin https://github.com/MalenyOchoa/nombreRepo.git (push)
+
+``
+Si tienes más de un remoto, el comando los listará todos.
+
+
+- * AÑADIR REPOSITORIOS REMOTOS *
+
+Para añadir un remoto nuevo y sociarlo a un nombre que puedas referenciar fácilmente,
+ejecuta: `git remote add [nombre] [url] `:
+```
+$ git remote
+origin
+$ git remote add repoMaleny https://github.com/MalenyOchoa/nmbRepositorio.git
+$ git remote -v
+origin     https://gith..... (fetch)
+origin     https://gith..... (push)
+repoMaleny https://gith..... (fetch)
+repoMaleny https://gith..... (push)
+
+
+A partir de ahora puedes usar el nombre `repoMaleny` en la linea de comandos en lugar de la URL entera.
+por ejemplo, si quieres traer toda la información que tiene MalenyOchoa pero tu aun no tienes en tu repositorio,
+puedes ejecutar `git fetch repoMaleny`
+
+- * ENVIAR TUS REMOTOS *
+
+Cuando tienes un proyecto que quieres compartir, debes enviarlo a un servidor.
+el comando para hacerlo es: `git push [nombre-remoto] [nombre-rama]`.
+Si quieres enviar tu rama `master` a tu servidor `origin` 
+(Recuerda, clonar un repositorio establece esos nombres automaticamente)
+puedes ejecutar el siguiente comando y se enviarán todos los commits que hayas hecho al servidor:
+
+``
+$ git push origin master
+
+``
+- * ELIMINAR Y RENOMBRAR REMOTOS *
+
+si quieres cambiar el nombre de la referencia de un remoto, puedes ejecutar `git remote rename`.
+Por ejemplo, si quieres renombrar `repoMaleny` a `repoM`, puedes hacerlo con `git remote rename`:
+``
+
+$ git remote rename repoMaleny repoM
+$ git remote
+origin
+repoM
+
+``
+Si por alguna razón quieres eliminar un remoto, puedes utilizar `git remore rm`:
+``
+
+$ git remote rm repoM
+$ git remote
+origin
+
+
+``
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
